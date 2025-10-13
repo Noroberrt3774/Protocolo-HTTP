@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Protocolo HTTP</h1>
+    <h2>¿Qué significa HTTP?
+</h2>
+
+
+</p>HTTP son las siglas de HyperText Transfer Protocol, que en español quiere decir Protocolo de Transferencia de Hipertexto.
+
+<p>El HTTP es un conjunto de reglas que permite que los navegadores web (como Chrome, Firefox o Edge) y los servidores web se comuniquen entre sí.
+
+Es decir, cuando tú entras a una página web, tu navegador le pide información al servidor donde está guardada esa página, y el servidor se la envía usando HTTP.
+</p>
+
+<h1>Estructura y funcionamiento del protocolo HTTP</h1>
+<h2>Funcionamiento básico</h2>
+<p>
+
+HTTP funciona bajo el modelo cliente-servidor:
+<ul>
+    <li>Cliente: Generalmente un navegador web. Realiza una solicitud (request) al servidor.
+</li>
+<li>Servidor: Recibe la solicitud, la procesa y devuelve una respuesta (response) al cliente.</li>
+</ul>
+<p> Este proceso se hace generalmente sobre el protocolo TCP/IP, y con frecuencia se usa en conjunto con HTTPS, que es la versión segura de HTTP.</p>
+</p>
+
+<h1>Estructura de una solicitud</h1>
+<h2>Tiene tres partes principales</h2>
+<p>
+<ul>
+
+<li>
+    Línea de petición: Incluye el método como GET (para obtener datos) o POST (para enviar datos), la URL (La dirección a la que se está haciendo la solicitud)
+y la versión de HTTP.
+</li>
+<li>
+    Encabezados (headers): Información adicional como tipo de navegador, formatos aceptados, etc.
+</li>
+<li>
+    Cuerpo (body) (opcional): Este es el contenido que se envía al servidor, normalmente en peticiones POST. 
+por ejemplo, datos de un formulario.
+</li>
+
+
+</ul>
+
+<h1>Estructura de una respuesta</h1>
+
+<h2>Código de estado</h2>
+<p> 
+Es un número de tres dígitos acompañado de una frase que indica si la solicitud fue exitosa o si hubo algún problema.
+
+</p>
+
+<p>Se agrupan en cinco categorías:
+</p>
+<ul>
+<li>
+    1XX: Informativos (por ejemplo, 100 Continuar)
+
+
+</li>
+
+
+<li>
+    2XX: Éxito (ejemplo, 200 OK: la solicitud fue exitosa)
+
+</li>
+<li>
+    3XX: Redirecciones
+
+</li>
+<li>
+    4XX: Errores del cliente (ejemplo, 404 Not Found: recurso no encontrado)
+
+</li>
+<li>
+    5XX: Errores del servidor (ejemplo, 500 Internal Server Error)
+
+
+</li>
+
+
+</ul>
+
+<h3>
+    Encabezados
+
+</h3>
+<p>Contienen metadatos o información adicional sobre la respuesta.
+</p>
+<p>
+
+Ejemplos de información en encabezados:
+
+Tipo de contenido que contiene la respuesta (como "text/html" o "application/json").
+
+Longitud del contenido (número de bytes del cuerpo).
+
+Datos sobre el servidor que procesa la solicitud.
+
+Parámetros que controlan la caché o la conexión.
+
+</p>
+
+
+</p>
+
+<h4>Cuerpo</h4>
+<p>
+
+<li>Es la parte que contiene los datos solicitados.</li>
+
+<li>Puede incluir páginas web HTML, datos JSON, imágenes, videos, u otros archivos.</li>
+
+<li>La ausencia de cuerpo es posible en ciertas respuestas, como cuando el código de estado es 204 (sin contenido).</p></li>
+</p>
+
+</body>
+</html>
